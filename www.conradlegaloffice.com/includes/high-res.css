@@ -1,0 +1,19 @@
+/* 1921px Responsive (min-width) */
+@media screen and (min-width:1921px) {
+
+	html {
+		/* Controls the font-size for 1600px t0 1281px. Font-size goes from 18px down to 15px. */
+		font-size: calc(15px + (18 - 15) * ((100vw - 1281px) / (1600 - 1281))) !important;
+	}
+	
+	html.x1 {
+		/* Text sizer level-1 */
+		font-size: calc((15px + (18 - 15) * ((100vw - 1281px) / (1600 - 1281))) * 1.5) !important;
+	}
+	
+	html.x2 {
+		/* Text sizer level-2 */
+		font-size: calc((15px + (18 - 15) * ((100vw - 1281px) / (1600 - 1281))) * 2) !important;
+	}	
+
+}
