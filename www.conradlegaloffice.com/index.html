@@ -382,30 +382,120 @@
 	 
 	<div class="mn_wd">
 		<div class="flx-blk-1024 col-50-50 anm_hlf-up">
-			<div class="vid-bx flx rsp_pd rsp_opn-tp ui-repeater" id="ReviewsV1Video" data-showhide="true">
-				<div class="rlt ato" data-item="i" data-key="172593">
-					<picture class="img-bg" role="presentation">
-						
-							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Meet Attorney Conrad Kuyawa" data-src="images-list/video-img-bg[1].jpg">
-						
-						
-					</picture>
-					<span class="ply-btn blk clr-acc" data-role="btn">
-						<svg viewBox="0 0 24 24" class="blk" role="presentation"><use data-href="images-list/tegrqhvp91k.24.2510311249583.svg"></use></svg>
+			<div class="vid-bx flx rsp_pd rsp_opn-tp" id="ReviewsV1Video">
+				<style>
+					#custom-video-trigger {
+						cursor: pointer;
+						position: relative;
+						display: block;
+						width: 100%;
+					}
+					#custom-video-trigger img {
+						display: block;
+						width: 100%;
+						height: auto;
+					}
+					#custom-video-trigger .ply-btn {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 80px;
+						height: 80px;
+						background: rgba(46, 130, 255, 0.8);
+						border-radius: 50%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						transition: background 0.3s;
+					}
+					#custom-video-trigger:hover .ply-btn {
+						background: rgba(46, 130, 255, 1);
+					}
+					#custom-video-trigger .ply-btn svg {
+						width: 40px;
+						height: 40px;
+						fill: #fff;
+					}
+					#video-modal {
+						display: none;
+						position: fixed;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background: rgba(0, 0, 0, 0.9);
+						z-index: 10000;
+						align-items: center;
+						justify-content: center;
+					}
+					#video-modal.active {
+						display: flex;
+					}
+					#video-modal .modal-content {
+						position: relative;
+						width: 90%;
+						max-width: 1000px;
+						background: #000;
+					}
+					#video-modal video {
+						width: 100%;
+						display: block;
+					}
+					#video-modal .close-btn {
+						position: absolute;
+						top: -40px;
+						right: 0;
+						color: #fff;
+						font-size: 30px;
+						cursor: pointer;
+						background: none;
+						border: none;
+						padding: 5px;
+						line-height: 1;
+					}
+				</style>
+				
+				<div id="custom-video-trigger">
+					<img src="images-list/video-img-bg[1].jpg" alt="Meet Attorney Conrad Kuyawa">
+					<span class="ply-btn">
+						<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
 					</span>
 				</div>
-				
-					<div class="pop flx f_clm f_m f_c bg-bx lk-bg grd-bg ui-scroll rsp_pd" data-role="panel">
-						<div class="bx ta_r">
-							<a title="Close the Video" aria-label="Close the Video" data-role="btn">
-								<svg viewBox="0 0 24 24"><use data-href="images-list/tegrqhvp91k.24.2510311249583.svg#close"></use></svg>
-							</a>
-							<video type="video/mp4" src="images-list/Conrad.mp4" controls="" preload="metadata" data-replace="false">
-								
-							</video>
-						</div>
-					</div>	
-				
+
+				<div id="video-modal">
+					<div class="modal-content">
+						<button class="close-btn" id="close-video">&times; Close</button>
+						<video id="conrad-video" src="images-list/Conrad.mp4" controls></video>
+					</div>
+				</div>
+
+				<script>
+					(function() {
+						var trigger = document.getElementById('custom-video-trigger');
+						var modal = document.getElementById('video-modal');
+						var closeBtn = document.getElementById('close-video');
+						var video = document.getElementById('conrad-video');
+
+						trigger.addEventListener('click', function() {
+							modal.classList.add('active');
+							video.play();
+						});
+
+						function closeModal() {
+							modal.classList.remove('active');
+							video.pause();
+							video.currentTime = 0;
+						}
+
+						closeBtn.addEventListener('click', closeModal);
+						modal.addEventListener('click', function(e) {
+							if (e.target === modal) {
+								closeModal();
+							}
+						});
+					})();
+				</script>
 			</div>
 			<div class="rvw bg-bx ulk-bg pd_h-40 pd_v-30 rsp_pd ta_c ui-repeater" id="ReviewsV1List" data-role="container">
 				<ul class="flx f_b" data-role="list">
