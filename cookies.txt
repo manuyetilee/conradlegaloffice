@@ -1,8 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-www.conradlegaloffice.com	TRUE	/	FALSE	1999999999	SEOT	#1
-www.conradlegaloffice.com	TRUE	/	FALSE	1999999999	T	!!
-www.conradlegaloffice.com	TRUE	/	FALSE	1999999999	SEOV	#24
-www.conradlegaloffice.com	TRUE	/	FALSE	1999999999	TS013cb11d	01773e8dcd4aa1fd154ba670485df9dce39bb99df81a116dc391229e11267d4d29c7e79f29ab4adca71c680708959a5c03250fa362
-www.conradlegaloffice.com	TRUE	/	FALSE	1999999999	SameSite	Strict
-
