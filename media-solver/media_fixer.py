@@ -17,6 +17,7 @@ DEFAULT_TARGET_FILES = [
     "criminal-defense/index.html",
     "landlord/index.html",
     "personal-injury/index.html",
+    "about-us/conrad-j-kuyawa/index.html",
     # Second batch
     "testimonials/index.html",
     "results/index.html",
