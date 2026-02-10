@@ -13,6 +13,8 @@ This project is the static website for the **Law Office of Conrad J. Kuyawa**. I
 
 *   **`media-solver/`**: A utility directory containing tools developed to maintain this project.
     *   **`media_fixer.py`**: A Python script designed to scan HTML files and fix broken media references by remapping them to the `images-list` directory.
+    *   **`generate_site_map.py`**: A Python script that crawls the website and generates a structured, Notion-compatible Markdown table (`userflow-links.md`) detailing the site's page hierarchy, accessible links, and visibility status.
+    *   **`run_site_map.sh`**: A shell script helper to run the site map generator with the correct arguments and dependencies.
     *   **`README.md`**: Documentation for the media solver tool.
 
 ## Usage
@@ -40,6 +42,13 @@ If you encounter broken images or media links (e.g., after moving files or addin
 python3 media-solver/media_fixer.py
 ```
 This script scans targeted HTML files and updates image `src` and link `href` attributes to point correctly to the `images-list` directory, handling timestamped filenames (e.g., `logo.12345.png` -> `logo.png`).
+
+**Site Map Generator**
+To generate a comprehensive table of all pages and their links (useful for User Flow analysis in Notion):
+```bash
+./media-solver/run_site_map.sh
+```
+This produces `userflow-links.md`.
 
 **Scorpion Cleanup**
 A cleanup process was performed to remove third-party tracking scripts and branding from "Scorpion". If these reappear or new files are added with these references, they should be removed to maintain site cleanliness and performance.
@@ -85,3 +94,20 @@ A cleanup process was performed to remove third-party tracking scripts and brand
 - All forms are functional and correctly styled.
 - Phone numbers are updated, interactive, and consistent across the site.
 - Branding and contact info are fully updated to the new requirements.
+
+### Session Summary (Feb 8, 2026)
+
+**Completed Tasks:**
+1.  **Site Map & User Flow Tooling:**
+    *   Developed `media-solver/generate_site_map.py`: A Python script to crawl the site and map all visible and hidden links.
+    *   Developed `media-solver/run_site_map.sh`: A wrapper script to install dependencies and run the generator.
+    *   Generated `userflow-links.md`: A structured, Notion-compatible Markdown file containing the site map.
+2.  **Table Structure & Logic:**
+    *   **Separation:** Segregated links into "Visible Content", "Visible Global Navigation" (NavBar/Footer), "Hidden Content", and "Hidden Global Navigation".
+    *   **Formatting:** Added row numbering and a dedicated "Count" column for the number of accessible links per page/container.
+    *   **Sorting:** Pages with 0 visible accessible links are now sorted to the bottom of the list.
+    *   **Cleanup:** Removed the explicit "Hidden" column from the output tables for cleaner presentation.
+
+**Current State:**
+- The project now has a documented and reproducible way to generate site maps for user flow analysis.
+- `userflow-links.md` provides an immediate snapshot of the site's link structure.

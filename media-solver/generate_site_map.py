@@ -86,40 +86,101 @@ def main():
                 else:
                     body_access[target_rel].append({'src': page_name, 'sec': sec, 'hid': hid})
 
-    with open(args.output, "w") as f:
-        f.write("## Page Tree (Content Links)\n")
-        f.write("| **Page Name** | **Accessible From (Content)** | **Hidden** |\n| --- | --- | --- |\n")
-        for rel, name in sorted(page_map.items(), key=lambda x: x[1]):
-            accs = body_access[rel]
-            if not accs:
-                f.write(f"| {name} | None | (false) |\n")
-                continue
-            grouped = {}
-            for e in accs:
-                if e['src'] not in grouped: grouped[e['src']] = []
-                if (e['sec'], e['hid']) not in grouped[e['src']]: grouped[e['src']].append((e['sec'], e['hid']))
-            c2, c3 = [], []
-            for s in sorted(grouped.keys()):
-                c2.append(f"{s} ({', '.join([x[0] for x in grouped[s]]}})")
-                c3.append("(" + ", ".join(["true" if x[1] else "false" for x in grouped[s]]) + ")")
-            f.write(f"| {name} | {', '.join(c2)} | {','.join(c3)} |\n")
+    # --- HELPER TO GENERATE ROWS ---
+    def generate_rows(data_map, is_global=False, show_hidden=False):
+        # 1. Collect Data
+        collected_data = [] # List of tuples: (name, count, link_column_string)
 
-        f.write("\n## Global Navigation (NavBar & Footer)\n")
-        f.write("| **Container** | **Links To** | **Hidden** |\n| --- | --- | --- |\n")
+        if is_global:
+            # data_map is {"NavBar": set(), "Footer": set()}
+            for container in ["NavBar", "Footer"]:
+                items = sorted(list(data_map.get(container, [])))
+                filtered_items = [x for x in items if x[2] == show_hidden]
+                
+                count = len(filtered_items)
+                if count == 0:
+                    continue # Skip empty global containers in listing? Or show 0?
+                             # Usually we just skip if empty for global nav tables.
+
+                groups = {} 
+                for t, s, h in filtered_items:
+                    if t not in groups: groups[t] = []
+                    groups[t].append(s)
+                
+                c2 = []
+                for t in sorted(groups.keys()):
+                    c2.append(f"{t} ({', '.join(groups[t])})")
+                
+                link_str = ", ".join(c2)
+                collected_data.append((container, count, link_str))
+        else:
+            # data_map is {target_rel: [entries]}
+            for rel, name in sorted(page_map.items(), key=lambda x: x[1]):
+                accs = data_map.get(rel, [])
+                filtered_accs = [e for e in accs if e['hid'] == show_hidden]
+                count = len(filtered_accs)
+                
+                if count == 0:
+                    if not show_hidden:
+                         # For visible table, include 0s
+                         collected_data.append((name, 0, "None"))
+                    # For hidden table, skip 0s
+                    continue
+                
+                grouped = {}
+                for e in filtered_accs:
+                    if e['src'] not in grouped: grouped[e['src']] = []
+                    if e['sec'] not in grouped[e['src']]: grouped[e['src']].append(e['sec'])
+                
+                c2 = []
+                for s in sorted(grouped.keys()):
+                    c2.append(f"{s} ({', '.join(grouped[s])})")
+                
+                link_str = ", ".join(c2)
+                collected_data.append((name, count, link_str))
+        
+        # 2. Sort Data
+        # Rule: 0s at the bottom. Non-0s alphabetical.
+        non_zeros = sorted([x for x in collected_data if x[1] > 0], key=lambda x: x[0])
+        zeros = sorted([x for x in collected_data if x[1] == 0], key=lambda x: x[0])
+        final_list = non_zeros + zeros
+        
+        # 3. Format Output
+        output_rows = []
+        for i, (name, cnt, links) in enumerate(final_list, 1):
+            output_rows.append(f"| {i} | {name} | {cnt} | {links} |")
+            
+        return output_rows
+
+    # --- WRITE OUTPUT ---
+    with open(args.output, "w") as f:
+        # Table 1: Visible Content
+        f.write("## Page Tree (Visible Content Links)\n")
+        f.write("| **#** | **Page Name** | **Count** | **Accessible From (Visible)** |\n| --- | --- | --- | --- |\n")
+        f.write("\n".join(generate_rows(body_access, is_global=False, show_hidden=False)))
+        f.write("\n\n")
+
+        # Table 2: Visible Global
+        f.write("## Global Navigation (Visible Links)\n")
+        f.write("| **#** | **Container** | **Count** | **Links To** |\n| --- | --- | --- | --- |\n")
+        
+        # Prepare global data dict
         nav_data = {"NavBar": set(), "Footer": set()}
         for c, t, s, h in global_links: nav_data[c].add((t, s, h))
-        for c in ["NavBar", "Footer"]:
-            items = sorted(list(nav_data[c]))
-            if not items: continue
-            groups = {}
-            for t, s, h in items:
-                if t not in groups: groups[t] = []
-                groups[t].append((s, h))
-            c2, c3 = [], []
-            for t in sorted(groups.keys()):
-                c2.append(f"{t} ({', '.join([x[0] for x in groups[t]]}})")
-                c3.append("(" + ", ".join(["true" if x[1] else "false" for x in groups[t]]) + ")")
-            f.write(f"| {c} | {', '.join(c2)} | {','.join(c3)} |\n")
+        
+        f.write("\n".join(generate_rows(nav_data, is_global=True, show_hidden=False)))
+        f.write("\n\n")
+
+        # Table 3: Hidden Content
+        f.write("## Hidden Content Links\n")
+        f.write("| **#** | **Page Name** | **Count** | **Hidden Access From** |\n| --- | --- | --- | --- |\n")
+        f.write("\n".join(generate_rows(body_access, is_global=False, show_hidden=True)))
+        f.write("\n\n")
+
+        # Table 4: Hidden Global
+        f.write("## Hidden Global Navigation Links\n")
+        f.write("| **#** | **Container** | **Count** | **Hidden Links To** |\n| --- | --- | --- | --- |\n")
+        f.write("\n".join(generate_rows(nav_data, is_global=True, show_hidden=True)))
 
     print(f"Generated {args.output}")
 
