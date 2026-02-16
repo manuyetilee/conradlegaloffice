@@ -1,14 +1,14 @@
 import os
 import argparse
+import csv
+import re
 from bs4 import BeautifulSoup
 
 def get_page_name(path, root_dir):
     rel_path = os.path.relpath(path, root_dir)
-    if rel_path == "index.html":
-        return "Home"
-    parts = os.path.dirname(rel_path).split(os.sep)
-    name = " / ".join([p.replace('-', ' ').title() for p in parts])
-    return name if name else "Home"
+    dir_name = os.path.dirname(rel_path)
+    if dir_name == "": return "index.html"
+    return dir_name
 
 def resolve_path(source_file_path, href, root_dir):
     if not href or href.startswith(('http', 'https', 'mailto:', 'tel:', 'javascript:', '#')):
@@ -45,12 +45,26 @@ def get_section_id(element):
         cursor = cursor.parent
     return "No ID"
 
+def is_child_or_self(source, target):
+    if source == target: return True
+    if source.startswith(target + "/"): return True
+    return False
+
+def sanitize_id(name):
+    # Create a safe ID for Mermaid/DOT
+    safe = re.sub(r'[^a-zA-Z0-9]', '_', name)
+    if safe[0].isdigit(): safe = '_' + safe
+    return safe
+
 def main():
-    parser = argparse.ArgumentParser(description="Generate a Notion-compatible Site Map and User Flow table.")
-    parser.add_argument("--root", default="www.conradlegaloffice.com", help="Root directory of the website")
-    parser.add_argument("--output", default="userflow-links.md", help="Output Markdown file")
-    parser.add_argument("--header-id", default="HeaderZone", help="ID of the header/nav container")
-    parser.add_argument("--footer-id", default="FooterZone", help="ID of the footer container")
+    parser = argparse.ArgumentParser(description="Generate Site Map in MD, CSV, MMD, and DOT formats.")
+    parser.add_argument("--root", default="www.conradlegaloffice.com", help="Root directory")
+    parser.add_argument("--output-md", default="userflow-links.md", help="Output Markdown file")
+    parser.add_argument("--output-csv", default="userflow-links.csv", help="Output CSV file")
+    parser.add_argument("--output-mmd", default="userflow-links.mmd", help="Output Mermaid file")
+    parser.add_argument("--output-dot", default="userflow-links.dot", help="Output DOT file")
+    parser.add_argument("--header-id", default="HeaderZone", help="Header ID")
+    parser.add_argument("--footer-id", default="FooterZone", help="Footer ID")
     args = parser.parse_args()
 
     page_map = {}
@@ -65,6 +79,7 @@ def main():
 
     body_access = {p: [] for p in page_map}
     global_links = set()
+    sitemap_page_links = [] 
 
     for file_path in all_files:
         page_name = get_page_name(file_path, args.root)
@@ -79,110 +94,233 @@ def main():
             if target_rel in page_map:
                 target_name = page_map[target_rel]
                 sec, hid = get_section_id(a), is_hidden(a)
+                
                 if header and (a in header.descendants):
                     global_links.add(("NavBar", target_name, sec, hid))
                 elif footer and (a in footer.descendants):
                     global_links.add(("Footer", target_name, sec, hid))
                 else:
-                    body_access[target_rel].append({'src': page_name, 'sec': sec, 'hid': hid})
+                    if page_name == 'site-map':
+                        if not hid: 
+                            sitemap_page_links.append((target_name, sec))
+                    else:
+                        body_access[target_rel].append({'src': page_name, 'sec': sec, 'hid': hid})
 
-    # --- HELPER TO GENERATE ROWS ---
-    def generate_rows(data_map, is_global=False, show_hidden=False):
-        # 1. Collect Data
-        collected_data = [] # List of tuples: (name, count, link_column_string)
+    # --- ORPHAN LOGIC (Recursive) ---
+    clean_graph_sources = {} 
+    valid_links_details = {}
 
-        if is_global:
-            # data_map is {"NavBar": set(), "Footer": set()}
-            for container in ["NavBar", "Footer"]:
-                items = sorted(list(data_map.get(container, [])))
-                filtered_items = [x for x in items if x[2] == show_hidden]
-                
-                count = len(filtered_items)
-                if count == 0:
-                    continue # Skip empty global containers in listing? Or show 0?
-                             # Usually we just skip if empty for global nav tables.
-
-                groups = {} 
-                for t, s, h in filtered_items:
-                    if t not in groups: groups[t] = []
-                    groups[t].append(s)
-                
-                c2 = []
-                for t in sorted(groups.keys()):
-                    c2.append(f"{t} ({', '.join(groups[t])})")
-                
-                link_str = ", ".join(c2)
-                collected_data.append((container, count, link_str))
-        else:
-            # data_map is {target_rel: [entries]}
-            for rel, name in sorted(page_map.items(), key=lambda x: x[1]):
-                accs = data_map.get(rel, [])
-                filtered_accs = [e for e in accs if e['hid'] == show_hidden]
-                count = len(filtered_accs)
-                
-                if count == 0:
-                    if not show_hidden:
-                         # For visible table, include 0s
-                         collected_data.append((name, 0, "None"))
-                    # For hidden table, skip 0s
-                    continue
-                
-                grouped = {}
-                for e in filtered_accs:
-                    if e['src'] not in grouped: grouped[e['src']] = []
-                    if e['sec'] not in grouped[e['src']]: grouped[e['src']].append(e['sec'])
-                
-                c2 = []
-                for s in sorted(grouped.keys()):
-                    c2.append(f"{s} ({', '.join(grouped[s])})")
-                
-                link_str = ", ".join(c2)
-                collected_data.append((name, count, link_str))
+    # Build Graph for Analysis
+    for rel, target_name in page_map.items():
+        raw_access = body_access.get(rel, [])
+        valid_sources = set()
+        details_list = []
         
-        # 2. Sort Data
-        # Rule: 0s at the bottom. Non-0s alphabetical.
-        non_zeros = sorted([x for x in collected_data if x[1] > 0], key=lambda x: x[0])
-        zeros = sorted([x for x in collected_data if x[1] == 0], key=lambda x: x[0])
-        final_list = non_zeros + zeros
-        
-        # 3. Format Output
-        output_rows = []
-        for i, (name, cnt, links) in enumerate(final_list, 1):
-            output_rows.append(f"| {i} | {name} | {cnt} | {links} |")
+        for entry in raw_access:
+            src_name = entry['src']
+            if entry['hid']: continue
+            if src_name == 'site-map': continue
+            if is_child_or_self(src_name, target_name): continue
             
-        return output_rows
+            valid_sources.add(src_name)
+            details_list.append(entry)
+            
+        clean_graph_sources[target_name] = valid_sources
+        valid_links_details[target_name] = details_list
 
-    # --- WRITE OUTPUT ---
-    with open(args.output, "w") as f:
-        # Table 1: Visible Content
+    # Detect Orphans
+    orphans_status = {}
+    
+    # 1. Ghost Pages
+    for target, sources in clean_graph_sources.items():
+        if len(sources) == 0:
+            orphans_status[target] = "Ghost Page (0 Links)"
+            
+    # 2. Recursive Unlinked
+    while True:
+        found_new_orphan = False
+        for target, sources in clean_graph_sources.items():
+            if target in orphans_status: continue
+            active_sources = [s for s in sources if s not in orphans_status]
+            if len(active_sources) == 0:
+                orphans_status[target] = "Unlinked Tree (Recursive)"
+                found_new_orphan = True
+        if not found_new_orphan:
+            break
+            
+    # 3. Isolated Cycles
+    forward_graph = {name: set() for name in page_map.values()}
+    for target, sources in clean_graph_sources.items():
+        for s in sources:
+            if s in forward_graph:
+                forward_graph[s].add(target)
+                
+    queue = ['index.html']
+    reachable = set(['index.html'])
+    
+    # Only verify reachability if index.html exists in our map
+    if 'index.html' in page_map.values():
+        while queue:
+            current = queue.pop(0)
+            children = forward_graph.get(current, set())
+            for child in children:
+                if child not in reachable:
+                    reachable.add(child)
+                    queue.append(child)
+        
+        for name in page_map.values():
+            if name not in reachable and name not in orphans_status:
+                orphans_status[name] = "Isolated Cycle / Island"
+
+    # --- DATA PREPARATION FOR TABLES ---
+    visible_rows = []
+    orphan_rows = []
+    
+    # Also collect edges for Graphs: Source -> Target
+    graph_edges = set() 
+    
+    for rel, name in sorted(page_map.items(), key=lambda x: x[1]):
+        if name in orphans_status:
+            status = orphans_status[name]
+            orphan_rows.append((name, 0, status))
+        else:
+            raw_details = valid_links_details.get(name, [])
+            active_entries = [e for e in raw_details if e['src'] not in orphans_status]
+            count = len(active_entries)
+            
+            grouped = {}
+            for e in active_entries:
+                s = e['src']
+                if s not in grouped: grouped[s] = []
+                if e['sec'] not in grouped[s]: grouped[s].append(e['sec'])
+                # Add edge to graph
+                graph_edges.add((s, name))
+            
+            c2 = []
+            for s in sorted(grouped.keys()):
+                c2.append(f"{s}({', '.join(grouped[s])})")
+            
+            visible_rows.append((name, count, ", ".join(c2)))
+
+    # Global
+    global_rows = []
+    nav_data = {"NavBar": set(), "Footer": set()}
+    for c, t, s, h in global_links: nav_data[c].add((t, s, h))
+    for container in ["NavBar", "Footer"]:
+        items = sorted(list(nav_data[c]))
+        filtered_items = [x for x in items if not x[2]]
+        if not filtered_items: continue
+        groups = {}
+        for t, s, h in filtered_items:
+            if t not in groups: groups[t] = []
+            groups[t].append(s)
+        c2 = []
+        for t in sorted(groups.keys()):
+            c2.append(f"{t}({', '.join(groups[t])})")
+        global_rows.append((container, len(filtered_items), ", ".join(c2)))
+
+    # Site Map
+    sm_groups = {}
+    for t, s in sitemap_page_links:
+        if t not in sm_groups: sm_groups[t] = []
+        if s not in sm_groups[t]: sm_groups[t].append(s)
+    sm_rows = []
+    for t in sorted(sm_groups.keys()):
+        sm_rows.append((t, len(sm_groups[t]), f"{t}({', '.join(sm_groups[t])})"))
+
+
+    # --- WRITE MARKDOWN ---
+    with open(args.output_md, "w") as f:
         f.write("## Page Tree (Visible Content Links)\n")
+        f.write("*Pages with 0 valid incoming links (excluding Site Map, self/child references, and recursive orphans) are listed in the 'Orphaned' table below.*\\n\\n")
         f.write("| **#** | **Page Name** | **Count** | **Accessible From (Visible)** |\n| --- | --- | --- | --- |\n")
-        f.write("\n".join(generate_rows(body_access, is_global=False, show_hidden=False)))
+        for i, (n, c, l) in enumerate(visible_rows, 1):
+            f.write(f"| {i} | {n} | {c} | {l} |\n")
         f.write("\n\n")
 
-        # Table 2: Visible Global
         f.write("## Global Navigation (Visible Links)\n")
         f.write("| **#** | **Container** | **Count** | **Links To** |\n| --- | --- | --- | --- |\n")
-        
-        # Prepare global data dict
-        nav_data = {"NavBar": set(), "Footer": set()}
-        for c, t, s, h in global_links: nav_data[c].add((t, s, h))
-        
-        f.write("\n".join(generate_rows(nav_data, is_global=True, show_hidden=False)))
+        for i, (n, c, l) in enumerate(global_rows, 1):
+            f.write(f"| {i} | {n} | {c} | {l} |\n")
         f.write("\n\n")
 
-        # Table 3: Hidden Content
-        f.write("## Hidden Content Links\n")
-        f.write("| **#** | **Page Name** | **Count** | **Hidden Access From** |\n| --- | --- | --- | --- |\n")
-        f.write("\n".join(generate_rows(body_access, is_global=False, show_hidden=True)))
+        f.write("## Excluded / Orphaned Pages (0 Content Links)\n")
+        f.write("* **Ghost Page**: Has 0 incoming content links.\n")
+        f.write("* **Unlinked Tree**: Linked only from Ghost Pages or other Unlinked Trees.\n")
+        f.write("* **Isolated Cycle**: Pages that link to each other but are disconnected from Home.*\\n\\n")
+        f.write("| **#** | **Page Name** | **Count** | **Status** |\n| --- | --- | --- | --- |\n")
+        for i, (n, c, l) in enumerate(orphan_rows, 1):
+            f.write(f"| {i} | {n} | {c} | {l} |\n")
         f.write("\n\n")
 
-        # Table 4: Hidden Global
-        f.write("## Hidden Global Navigation Links\n")
-        f.write("| **#** | **Container** | **Count** | **Hidden Links To** |\n| --- | --- | --- | --- |\n")
-        f.write("\n".join(generate_rows(nav_data, is_global=True, show_hidden=True)))
+        f.write("## Excluded / Site Map Page Links\n")
+        f.write("| **#** | **Target Page** | **Section** |\n| --- | --- | --- |\n")
+        for i, (t, c, l) in enumerate(sm_rows, 1):
+            try:
+                sections_only = l.split('(')[1][:-1]
+            except:
+                sections_only = l
+            f.write(f"| {i} | {t} | {sections_only} |\n")
 
-    print(f"Generated {args.output}")
+    print(f"Generated Markdown: {args.output_md}")
+
+    # --- WRITE CSV ---
+    csv_rows = []
+    for n, c, l in visible_rows:
+        csv_rows.append({"Category": "Content Flow", "Name": n, "Count": c, "Details": l})
+    for n, c, l in global_rows:
+        csv_rows.append({"Category": "Global Navigation", "Name": n, "Count": c, "Details": l})
+    for n, c, l in orphan_rows:
+        csv_rows.append({"Category": "Orphaned", "Name": n, "Count": c, "Details": l})
+    for t, c, l in sm_rows:
+        csv_rows.append({"Category": "Site Map Link", "Name": t, "Count": c, "Details": l})
+
+    with open(args.output_csv, "w", newline='') as csvfile:
+        fieldnames = ["Category", "Name", "Count", "Details"]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in csv_rows:
+            writer.writerow(row)
+    print(f"Generated CSV: {args.output_csv}")
+
+    # --- WRITE MERMAID ---
+    with open(args.output_mmd, "w") as f:
+        f.write("graph LR\n")
+        # Nodes (Only Visible Content + Orphans usually, typically graphs show valid flow)
+        # We will show the Valid Flow graph.
+        
+        # Define Nodes
+        # Use page_map.values() but filtering out things we don't want?
+        # Let's include everything in the map for completeness, or just involved nodes.
+        nodes = set()
+        for s, t in graph_edges:
+            nodes.add(s)
+            nodes.add(t)
+            
+        for n in sorted(list(nodes)):
+            f.write(f"    {sanitize_id(n)}[{n}]\n")
+            
+        # Edges
+        for s, t in sorted(list(graph_edges)):
+            f.write(f"    {sanitize_id(s)} --> {sanitize_id(t)}\n")
+            
+    print(f"Generated Mermaid: {args.output_mmd}")
+
+    # --- WRITE DOT ---
+    with open(args.output_dot, "w") as f:
+        f.write("digraph SiteMap {\n")
+        f.write("    rankdir=LR;\n")
+        f.write("    node [shape=box, style=filled, fillcolor=white];\n")
+        
+        for n in sorted(list(nodes)):
+            f.write(f'    "{n}" [label="{n}"];\n')
+            
+        for s, t in sorted(list(graph_edges)):
+            f.write(f'    "{s}" -> "{t}";\n')
+            
+        f.write("}\n")
+        
+    print(f"Generated DOT: {args.output_dot}")
 
 if __name__ == "__main__":
     main()

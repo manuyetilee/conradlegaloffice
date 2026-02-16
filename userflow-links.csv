@@ -1,0 +1,117 @@
+Category,Name,Count,Details
+Content Flow,about-us,19,"criminal-defense(#ContentV1AltContent2), criminal-defense/domestic-violence(#ContentV5Content), criminal-defense/dui(#ContentV5Content), criminal-defense/theft-crimes(#ContentV5Content), index.html(#ContentV2Button), landlord(#ServicesParentV1Content), landlord/landlord-representation(#MainContent), landlord/lease-rental-agreements(#MainContent), personal-injury(#ServicesParentV1Content, #ContentV1AltContent2), personal-injury/bus-accidents(#MainContent), personal-injury/hospital-negligence(#MainContent), personal-injury/motorcycle-accidents(#MainContent), personal-injury/nursing-home-abuse-neglect(#MainContent), personal-injury/premises-liability(#MainContent), personal-injury/slip-and-fall(#MainContent), personal-injury/truck-accidents(#MainContent), personal-injury/wrongful-death(#MainContent)"
+Content Flow,about-us/conrad-j-kuyawa,12,"criminal-defense/domestic-violence(#ContentV1AltContent2), index.html(#StaffV3Button, #StaffV3List), landlord/evictions(#MainContent, #ContentV5Content), landlord/landlord-representation(#ContentV5Content), landlord/tenant-representation(#MainContent), personal-injury(#ContentV1AltContent2), personal-injury/car-accidents(#MainContent), personal-injury/motorcycle-accidents(#MainContent), personal-injury/premises-liability(#MainContent)"
+Content Flow,contact,44,"about-us(#MainContent), criminal-defense(#MainContent, #MainstageV2MainContentCta, #ContentV1AltContent2), criminal-defense/domestic-violence(#ContentV5Content, #ContentV1AltContent2), criminal-defense/drug-crimes(#ContentV5Content), criminal-defense/dui(#ContentV5Content, #ContentV1AltContent2), criminal-defense/theft-crimes(#ContentV5Content), index.html(#MainstageV1AltContent, #ContentV1MainContentContent2, #ContentV2Content), landlord(#MainstageV2MainContentCta, #ServicesParentV1Content, #ContentV1AltContent2), landlord/evictions(#MainContent, #ContentV5Content), landlord/landlord-representation(#MainContent, #ContentV5Content), landlord/lease-rental-agreements(#MainContent), landlord/tenant-representation(#MainContent), personal-injury(#MainstageV2MainContentCta, #ServicesParentV1Content, #ContentV1AltContent2), personal-injury/car-accidents(#MainContent), personal-injury/motorcycle-accidents(#MainContent), personal-injury/premises-liability(#MainContent), personal-injury/wrongful-death(#MainContent), testimonials(#ReviewSystemV1FeaturedBtnBx)"
+Content Flow,criminal-defense,2,"index.html(#MainContent, #ServicesV1List)"
+Content Flow,criminal-defense/domestic-violence,1,criminal-defense(#ContentV1AltContent)
+Content Flow,criminal-defense/drug-crimes,1,criminal-defense(#ContentV1AltContent)
+Content Flow,criminal-defense/dui,1,criminal-defense(#ContentV1AltContent)
+Content Flow,criminal-defense/theft-crimes,1,criminal-defense(#ContentV1AltContent)
+Content Flow,index.html,2,"about-us/conrad-j-kuyawa(#BreadCrumbsV1), landlord/evictions(#ContentV5Content)"
+Content Flow,landlord,2,"index.html(#MainContent, #ServicesV1List)"
+Content Flow,landlord/evictions,10,"landlord(#ServicesParentV1List, #ContentV1AltContent), landlord/landlord-representation(#SideNavV1, #ContentV5Content), landlord/lease-rental-agreements(#MainContent, #SideNavV1), landlord/tenant-representation(#MainContent, #SideNavV1)"
+Content Flow,landlord/landlord-representation,6,"landlord(#ServicesParentV1List, #ContentV1AltContent), landlord/evictions(#SideNavV1, #ContentV5Content), landlord/lease-rental-agreements(#SideNavV1), landlord/tenant-representation(#SideNavV1)"
+Content Flow,landlord/lease-rental-agreements,6,"landlord/evictions(#MainContent, #SideNavV1), landlord/landlord-representation(#MainContent, #SideNavV1, #ContentV5Content), landlord/tenant-representation(#SideNavV1)"
+Content Flow,landlord/tenant-representation,5,"landlord(#ContentV1AltContent), landlord/evictions(#SideNavV1), landlord/landlord-representation(#SideNavV1, #ContentV5Content), landlord/lease-rental-agreements(#SideNavV1)"
+Content Flow,personal-injury,3,"about-us(#MainContent), index.html(#MainContent, #ServicesV1List)"
+Content Flow,personal-injury/bus-accidents,10,"personal-injury(#ServicesParentV1List, #ContentV1AltContent2), personal-injury/car-accidents(#SideNavV1), personal-injury/hospital-negligence(#SideNavV1), personal-injury/motorcycle-accidents(#SideNavV1), personal-injury/nursing-home-abuse-neglect(#SideNavV1), personal-injury/premises-liability(#SideNavV1), personal-injury/slip-and-fall(#SideNavV1), personal-injury/truck-accidents(#SideNavV1), personal-injury/wrongful-death(#SideNavV1)"
+Content Flow,personal-injury/car-accidents,14,"about-us(#MainContent), index.html(#ServicesV1Content, #ServicesV1List), personal-injury(#ServicesParentV1Content, #ServicesParentV1List, #ContentV1AltContent2), personal-injury/bus-accidents(#SideNavV1), personal-injury/hospital-negligence(#SideNavV1), personal-injury/motorcycle-accidents(#SideNavV1), personal-injury/nursing-home-abuse-neglect(#SideNavV1), personal-injury/premises-liability(#SideNavV1), personal-injury/slip-and-fall(#SideNavV1), personal-injury/truck-accidents(#SideNavV1), personal-injury/wrongful-death(#SideNavV1)"
+Content Flow,personal-injury/hospital-negligence,9,"personal-injury(#ServicesParentV1List), personal-injury/bus-accidents(#SideNavV1), personal-injury/car-accidents(#SideNavV1), personal-injury/motorcycle-accidents(#SideNavV1), personal-injury/nursing-home-abuse-neglect(#SideNavV1), personal-injury/premises-liability(#SideNavV1), personal-injury/slip-and-fall(#SideNavV1), personal-injury/truck-accidents(#SideNavV1), personal-injury/wrongful-death(#SideNavV1)"
+Content Flow,personal-injury/motorcycle-accidents,10,"personal-injury(#ServicesParentV1List, #ContentV1AltContent2), personal-injury/bus-accidents(#SideNavV1), personal-injury/car-accidents(#SideNavV1), personal-injury/hospital-negligence(#SideNavV1), personal-injury/nursing-home-abuse-neglect(#SideNavV1), personal-injury/premises-liability(#SideNavV1), personal-injury/slip-and-fall(#SideNavV1), personal-injury/truck-accidents(#SideNavV1), personal-injury/wrongful-death(#SideNavV1)"
+Content Flow,personal-injury/nursing-home-abuse-neglect,9,"personal-injury(#ServicesParentV1List), personal-injury/bus-accidents(#SideNavV1), personal-injury/car-accidents(#SideNavV1), personal-injury/hospital-negligence(#SideNavV1), personal-injury/motorcycle-accidents(#SideNavV1), personal-injury/premises-liability(#SideNavV1), personal-injury/slip-and-fall(#SideNavV1), personal-injury/truck-accidents(#SideNavV1), personal-injury/wrongful-death(#SideNavV1)"
+Content Flow,personal-injury/premises-liability,9,"personal-injury(#ServicesParentV1List), personal-injury/bus-accidents(#SideNavV1), personal-injury/car-accidents(#SideNavV1), personal-injury/hospital-negligence(#SideNavV1), personal-injury/motorcycle-accidents(#SideNavV1), personal-injury/nursing-home-abuse-neglect(#SideNavV1), personal-injury/slip-and-fall(#SideNavV1), personal-injury/truck-accidents(#SideNavV1), personal-injury/wrongful-death(#SideNavV1)"
+Content Flow,personal-injury/slip-and-fall,13,"index.html(#ServicesV1Content), personal-injury(#ServicesParentV1Content, #ServicesParentV1List, #ContentV1AltContent2), personal-injury/bus-accidents(#SideNavV1), personal-injury/car-accidents(#SideNavV1), personal-injury/hospital-negligence(#SideNavV1), personal-injury/motorcycle-accidents(#SideNavV1), personal-injury/nursing-home-abuse-neglect(#SideNavV1), personal-injury/premises-liability(#MainContent, #SideNavV1), personal-injury/truck-accidents(#SideNavV1), personal-injury/wrongful-death(#SideNavV1)"
+Content Flow,personal-injury/truck-accidents,11,"personal-injury(#ServicesParentV1Content, #ServicesParentV1List, #ContentV1AltContent2), personal-injury/bus-accidents(#SideNavV1), personal-injury/car-accidents(#SideNavV1), personal-injury/hospital-negligence(#SideNavV1), personal-injury/motorcycle-accidents(#SideNavV1), personal-injury/nursing-home-abuse-neglect(#SideNavV1), personal-injury/premises-liability(#SideNavV1), personal-injury/slip-and-fall(#SideNavV1), personal-injury/wrongful-death(#SideNavV1)"
+Content Flow,personal-injury/wrongful-death,9,"personal-injury(#ServicesParentV1List), personal-injury/bus-accidents(#SideNavV1), personal-injury/car-accidents(#SideNavV1), personal-injury/hospital-negligence(#SideNavV1), personal-injury/motorcycle-accidents(#SideNavV1), personal-injury/nursing-home-abuse-neglect(#SideNavV1), personal-injury/premises-liability(#SideNavV1), personal-injury/slip-and-fall(#SideNavV1), personal-injury/truck-accidents(#SideNavV1)"
+Content Flow,results,1,criminal-defense/dui(#ContentV5Content)
+Content Flow,testimonials,23,"about-us(#ReviewsV1Button), criminal-defense(#ReviewsV2Button), criminal-defense/domestic-violence(#ReviewsV2Button), criminal-defense/drug-crimes(#ReviewsV2Button), criminal-defense/dui(#ContentV5Content, #ReviewsV2Button), criminal-defense/theft-crimes(#ReviewsV2Button), index.html(#ReviewsV1Button), landlord(#ReviewsV2Button), landlord/evictions(#ReviewsV2Button), landlord/landlord-representation(#ReviewsV2Button), landlord/lease-rental-agreements(#ReviewsV2Button), landlord/tenant-representation(#ReviewsV2Button), personal-injury(#ReviewsV2Button), personal-injury/bus-accidents(#ReviewsV2Button), personal-injury/car-accidents(#ReviewsV2Button), personal-injury/hospital-negligence(#ReviewsV2Button), personal-injury/motorcycle-accidents(#ReviewsV2Button), personal-injury/nursing-home-abuse-neglect(#ReviewsV2Button), personal-injury/premises-liability(#ReviewsV2Button), personal-injury/slip-and-fall(#ReviewsV2Button), personal-injury/truck-accidents(#ReviewsV2Button), personal-injury/wrongful-death(#ReviewsV2Button)"
+Global Navigation,NavBar,42,"about-us(#HeaderV1TopNav), about-us/conrad-j-kuyawa(#HeaderV1TopNav), blog(#HeaderV1TopNav), blog/2020(#HeaderV1TopNav), blog/2020/august(#HeaderV1TopNav), blog/2023(#HeaderV1TopNav), blog/2023/july(#HeaderV1TopNav), contact(#HeaderV1QuickLinks, #HeaderV1QuickLinksMobile, #SiteMapV1List), criminal-defense(#HeaderV1TopNav), criminal-defense/domestic-violence(#HeaderV1TopNav), criminal-defense/drug-crimes(#HeaderV1TopNav), criminal-defense/drug-crimes/drug-possession(#HeaderV1TopNav), criminal-defense/dui(#HeaderV1TopNav), criminal-defense/felony-crimes(#HeaderV1TopNav), criminal-defense/theft-crimes(#HeaderV1TopNav), criminal-defense/violent-crimes(#HeaderV1TopNav), index.html(#HeaderV1, #HeaderV1TopNav), landlord(#HeaderV1TopNav), landlord/evictions(#HeaderV1TopNav), landlord/landlord-representation(#HeaderV1TopNav), landlord/lease-rental-agreements(#HeaderV1TopNav), landlord/tenant-representation(#HeaderV1TopNav), personal-injury(#HeaderV1TopNav), personal-injury/bus-accidents(#HeaderV1TopNav), personal-injury/car-accidents(#HeaderV1TopNav), personal-injury/hospital-negligence(#HeaderV1TopNav), personal-injury/motorcycle-accidents(#HeaderV1TopNav), personal-injury/nursing-home-abuse-neglect(#HeaderV1TopNav), personal-injury/premises-liability(#HeaderV1TopNav), personal-injury/slip-and-fall(#HeaderV1TopNav), personal-injury/truck-accidents(#HeaderV1TopNav), personal-injury/wrongful-death(#HeaderV1TopNav), results(#HeaderV1QuickLinks, #HeaderV1QuickLinksMobile, #SiteMapV1List), site-search(#HeaderV1TopNav), testimonials(#HeaderV1QuickLinks, #HeaderV1QuickLinksMobile, #SiteMapV1List)"
+Global Navigation,Footer,42,"about-us(#HeaderV1TopNav), about-us/conrad-j-kuyawa(#HeaderV1TopNav), blog(#HeaderV1TopNav), blog/2020(#HeaderV1TopNav), blog/2020/august(#HeaderV1TopNav), blog/2023(#HeaderV1TopNav), blog/2023/july(#HeaderV1TopNav), contact(#HeaderV1QuickLinks, #HeaderV1QuickLinksMobile, #SiteMapV1List), criminal-defense(#HeaderV1TopNav), criminal-defense/domestic-violence(#HeaderV1TopNav), criminal-defense/drug-crimes(#HeaderV1TopNav), criminal-defense/drug-crimes/drug-possession(#HeaderV1TopNav), criminal-defense/dui(#HeaderV1TopNav), criminal-defense/felony-crimes(#HeaderV1TopNav), criminal-defense/theft-crimes(#HeaderV1TopNav), criminal-defense/violent-crimes(#HeaderV1TopNav), index.html(#HeaderV1, #HeaderV1TopNav), landlord(#HeaderV1TopNav), landlord/evictions(#HeaderV1TopNav), landlord/landlord-representation(#HeaderV1TopNav), landlord/lease-rental-agreements(#HeaderV1TopNav), landlord/tenant-representation(#HeaderV1TopNav), personal-injury(#HeaderV1TopNav), personal-injury/bus-accidents(#HeaderV1TopNav), personal-injury/car-accidents(#HeaderV1TopNav), personal-injury/hospital-negligence(#HeaderV1TopNav), personal-injury/motorcycle-accidents(#HeaderV1TopNav), personal-injury/nursing-home-abuse-neglect(#HeaderV1TopNav), personal-injury/premises-liability(#HeaderV1TopNav), personal-injury/slip-and-fall(#HeaderV1TopNav), personal-injury/truck-accidents(#HeaderV1TopNav), personal-injury/wrongful-death(#HeaderV1TopNav), results(#HeaderV1QuickLinks, #HeaderV1QuickLinksMobile, #SiteMapV1List), site-search(#HeaderV1TopNav), testimonials(#HeaderV1QuickLinks, #HeaderV1QuickLinksMobile, #SiteMapV1List)"
+Orphaned,antioch,0,Ghost Page (0 Links)
+Orphaned,articles,0,Ghost Page (0 Links)
+Orphaned,attorneys,0,Ghost Page (0 Links)
+Orphaned,awards-accolades,0,Ghost Page (0 Links)
+Orphaned,bay-point-cdp-,0,Ghost Page (0 Links)
+Orphaned,blog,0,Ghost Page (0 Links)
+Orphaned,blog/2020,0,Ghost Page (0 Links)
+Orphaned,blog/2020/august,0,Ghost Page (0 Links)
+Orphaned,blog/2020/august/hello-world-,0,Isolated Cycle / Island
+Orphaned,blog/2023,0,Ghost Page (0 Links)
+Orphaned,blog/2023/july,0,Ghost Page (0 Links)
+Orphaned,blog/2023/july/eviction-defense-strategies-in-california-how-te,0,Isolated Cycle / Island
+Orphaned,blog/2023/july/implied-warranty-of-habitability,0,Isolated Cycle / Island
+Orphaned,blog/2023/july/top-5-legal-issues-landlords-face-in-california-,0,Isolated Cycle / Island
+Orphaned,blog/categories,0,Ghost Page (0 Links)
+Orphaned,blog/categories/eviction,0,Isolated Cycle / Island
+Orphaned,blog/categories/uncategorized,0,Isolated Cycle / Island
+Orphaned,contact/thank-you,0,Ghost Page (0 Links)
+Orphaned,criminal-defense/drug-crimes/drug-possession,0,Unlinked Tree (Recursive)
+Orphaned,criminal-defense/felony-crimes,0,Ghost Page (0 Links)
+Orphaned,criminal-defense/violent-crimes,0,Ghost Page (0 Links)
+Orphaned,emails,0,Ghost Page (0 Links)
+Orphaned,emails/resubscribe,0,Ghost Page (0 Links)
+Orphaned,emails/unsubscribe,0,Ghost Page (0 Links)
+Orphaned,error,0,Ghost Page (0 Links)
+Orphaned,error/404,0,Ghost Page (0 Links)
+Orphaned,error/500,0,Ghost Page (0 Links)
+Orphaned,faq,0,Ghost Page (0 Links)
+Orphaned,locations,0,Ghost Page (0 Links)
+Orphaned,nps-survey,0,Ghost Page (0 Links)
+Orphaned,nps-survey/thank-you,0,Ghost Page (0 Links)
+Orphaned,photo-gallery,0,Ghost Page (0 Links)
+Orphaned,privacy-policy,0,Ghost Page (0 Links)
+Orphaned,reviews-reputation,0,Ghost Page (0 Links)
+Orphaned,reviews-reputation/leave-a-review,0,Ghost Page (0 Links)
+Orphaned,reviews-reputation/leave-a-review/thank-you,0,Ghost Page (0 Links)
+Orphaned,richmond-ca,0,Ghost Page (0 Links)
+Orphaned,san-pablo,0,Ghost Page (0 Links)
+Orphaned,site-map,0,Ghost Page (0 Links)
+Orphaned,site-search,0,Ghost Page (0 Links)
+Orphaned,style-guide,0,Ghost Page (0 Links)
+Orphaned,testimonials/thank-you,0,Ghost Page (0 Links)
+Orphaned,video-center,0,Ghost Page (0 Links)
+Orphaned,video-center/firm-videos,0,Unlinked Tree (Recursive)
+Orphaned,video-center/firm-videos/meet-attorney-conrad-kuyawa,0,Unlinked Tree (Recursive)
+Site Map Link,about-us,1,about-us(#SiteMapV1List)
+Site Map Link,about-us/conrad-j-kuyawa,1,about-us/conrad-j-kuyawa(#SiteMapV1List)
+Site Map Link,antioch,1,antioch(#SiteMapV1List)
+Site Map Link,bay-point-cdp-,1,bay-point-cdp-(#SiteMapV1List)
+Site Map Link,blog,1,blog(#SiteMapV1List)
+Site Map Link,blog/2020,1,blog/2020(#SiteMapV1List)
+Site Map Link,blog/2020/august,1,blog/2020/august(#SiteMapV1List)
+Site Map Link,blog/2020/august/hello-world-,1,blog/2020/august/hello-world-(#SiteMapV1List)
+Site Map Link,blog/2023,1,blog/2023(#SiteMapV1List)
+Site Map Link,blog/2023/july,1,blog/2023/july(#SiteMapV1List)
+Site Map Link,blog/2023/july/eviction-defense-strategies-in-california-how-te,1,blog/2023/july/eviction-defense-strategies-in-california-how-te(#SiteMapV1List)
+Site Map Link,blog/2023/july/implied-warranty-of-habitability,1,blog/2023/july/implied-warranty-of-habitability(#SiteMapV1List)
+Site Map Link,blog/2023/july/top-5-legal-issues-landlords-face-in-california-,1,blog/2023/july/top-5-legal-issues-landlords-face-in-california-(#SiteMapV1List)
+Site Map Link,criminal-defense,1,criminal-defense(#SiteMapV1List)
+Site Map Link,criminal-defense/domestic-violence,1,criminal-defense/domestic-violence(#SiteMapV1List)
+Site Map Link,criminal-defense/drug-crimes,1,criminal-defense/drug-crimes(#SiteMapV1List)
+Site Map Link,criminal-defense/drug-crimes/drug-possession,1,criminal-defense/drug-crimes/drug-possession(#SiteMapV1List)
+Site Map Link,criminal-defense/dui,1,criminal-defense/dui(#SiteMapV1List)
+Site Map Link,criminal-defense/felony-crimes,1,criminal-defense/felony-crimes(#SiteMapV1List)
+Site Map Link,criminal-defense/theft-crimes,1,criminal-defense/theft-crimes(#SiteMapV1List)
+Site Map Link,criminal-defense/violent-crimes,1,criminal-defense/violent-crimes(#SiteMapV1List)
+Site Map Link,index.html,1,index.html(#SiteMapV1List)
+Site Map Link,landlord,1,landlord(#SiteMapV1List)
+Site Map Link,landlord/evictions,1,landlord/evictions(#SiteMapV1List)
+Site Map Link,landlord/landlord-representation,1,landlord/landlord-representation(#SiteMapV1List)
+Site Map Link,landlord/lease-rental-agreements,1,landlord/lease-rental-agreements(#SiteMapV1List)
+Site Map Link,landlord/tenant-representation,1,landlord/tenant-representation(#SiteMapV1List)
+Site Map Link,personal-injury,1,personal-injury(#SiteMapV1List)
+Site Map Link,personal-injury/bus-accidents,1,personal-injury/bus-accidents(#SiteMapV1List)
+Site Map Link,personal-injury/car-accidents,1,personal-injury/car-accidents(#SiteMapV1List)
+Site Map Link,personal-injury/hospital-negligence,1,personal-injury/hospital-negligence(#SiteMapV1List)
+Site Map Link,personal-injury/motorcycle-accidents,1,personal-injury/motorcycle-accidents(#SiteMapV1List)
+Site Map Link,personal-injury/nursing-home-abuse-neglect,1,personal-injury/nursing-home-abuse-neglect(#SiteMapV1List)
+Site Map Link,personal-injury/premises-liability,1,personal-injury/premises-liability(#SiteMapV1List)
+Site Map Link,personal-injury/slip-and-fall,1,personal-injury/slip-and-fall(#SiteMapV1List)
+Site Map Link,personal-injury/truck-accidents,1,personal-injury/truck-accidents(#SiteMapV1List)
+Site Map Link,personal-injury/wrongful-death,1,personal-injury/wrongful-death(#SiteMapV1List)
+Site Map Link,richmond-ca,1,richmond-ca(#SiteMapV1List)
+Site Map Link,san-pablo,1,san-pablo(#SiteMapV1List)
+Site Map Link,site-map,1,site-map(#SiteMapV1List)
+Site Map Link,video-center,1,video-center(#SiteMapV1List)
+Site Map Link,video-center/firm-videos,1,video-center/firm-videos(#SiteMapV1List)
+Site Map Link,video-center/firm-videos/meet-attorney-conrad-kuyawa,1,video-center/firm-videos/meet-attorney-conrad-kuyawa(#SiteMapV1List)
