@@ -1,0 +1,62 @@
+PAGE: VEHICLE ACCIDENTS (CONSOLIDATED)
+========================================
+
+[HEADER] Highway 4 & Contra Costa Traffic Safety
+--------------------------------------------------
+[H1] Pittsburg Vehicle Accident Lawyer
+[P] Traffic accidents on Highway 4 and throughout the Bay Area can change your life in a split second. Whether you are dealing with a fender bender or a catastrophic collision, the aftermath involves complex insurance negotiations and mounting medical bills. We provide aggressive representation for all types of vehicle accident victims, ensuring that negligent drivers and insurance companies are held accountable.
+
+--------------------------------------------------
+
+[HEADER] Accident Types & Specifics
+--------------------------------------------------
+[TABS]
+    [TAB: Car Accidents]
+    [H2] Protecting Drivers & Passengers
+    [P] Car accidents are the most common cause of personal injury in California. Insurance companies often try to minimize payouts by arguing "comparative negligence" or offering quick, low-ball settlements.
+    [P] **What We Fight For:**
+    [LIST]
+    - Medical expenses (past and future)
+    - Lost wages and loss of earning capacity
+    - Vehicle repair or replacement value
+    - Pain and suffering
+
+    [TAB: Bus Accidents]
+    [H2] Common Carrier Liability
+    [P] Bus operators (both public and private) are considered "common carriers" under California law, meaning they owe a higher duty of care to their passengers than typical drivers. If you were injured on a bus, or hit by one, the liability rules are strict.
+    [P] **Key Issues:**
+    - Driver fatigue or lack of training
+    - Poor vehicle maintenance
+    - Sudden stops or aggressive driving
+
+    [TAB: Motorcycle Accidents]
+    [H2] Fighting for Riders
+    [P] Motorcyclists often face unfair bias from insurance adjusters who try to label them as reckless. We know that riders are often the most safety-conscious people on the road. Because injuries are often catastrophic, we fight aggressively for the lifetime care compensation you may need.
+    [P] **Our Focus:**
+    - Traumatic brain injuries (TBI)
+    - Road rash and scarring
+    - Spinal cord injuries
+
+    [TAB: Truck Accidents]
+    [H2] Commercial Trucking Litigation
+    [P] Accidents involving 18-wheelers or delivery trucks are legally complex because multiple parties may be liable: the driver, the trucking company, the cargo loader, or the vehicle manufacturer. These cases require swift investigation to preserve electronic logbooks and maintenance records before they are destroyed.
+    [P] **We Investigate:**
+    - Hours-of-service violations (driver fatigue)
+    - Overloaded or improperly secured cargo
+    - Negligent hiring practices
+
+--------------------------------------------------
+
+[HEADER] Your Rights
+--------------------------------------------------
+[H2] Comparative Negligence in California
+[P] Even if you were partially at fault for the accident, you may still be entitled to compensation. California follows a "pure comparative negligence" rule, meaning your recovery is reduced only by your percentage of fault. Do not let an insurance adjuster tell you that you have no case without speaking to us first.
+
+--------------------------------------------------
+
+[HEADER] Immediate Action Required
+--------------------------------------------------
+[H2] Don't Delay Your Claim
+[P] The statute of limitations for vehicle accidents in California is generally two years. However, claims against government entities (like public bus systems) have much shorter deadlines (often just 6 months).
+
+[BUTTON] Schedule a Free Accident Consultation

@@ -1,0 +1,51 @@
+PAGE: PERSONAL INJURY (HUB)
+========================================
+
+[HEADER] Justice for Injury Victims
+--------------------------------------------------
+[H1] Pittsburg Personal Injury Attorney: Representing Victims in Contra Costa County
+[P] When you are injured due to another person's negligence, the physical, emotional, and financial toll can be overwhelming. At the Law Office of Conrad J. Kuyawa, we fight to secure the maximum compensation for our clients. We handle the legal burden—investigating claims, negotiating with insurers, and litigating in court—so you can focus on your recovery.
+
+--------------------------------------------------
+
+[HEADER] Our Areas of Practice
+--------------------------------------------------
+[H2] Vehicle Accidents
+[P] From car crashes on Highway 4 to complex truck and motorcycle accidents, we hold negligent drivers accountable.
+[BUTTON] View Vehicle Accident Services
+
+[H2] Premises Liability
+[P] Property owners have a duty to keep their premises safe. If you've been injured by a slip and fall, dog bite, or negligent security, we can help.
+[BUTTON] View Premises Liability Services
+
+[H2] Wrongful Death
+[P] Compassionate and aggressive representation for families who have lost a loved one due to fatal negligence.
+[BUTTON] View Wrongful Death Services
+
+--------------------------------------------------
+
+[HEADER] Why Choose a Local Attorney?
+--------------------------------------------------
+[H2] Home Field Advantage
+[P] We know the local landscape. We are familiar with the specific hazards of California Highway 4, the procedures of the Pittsburg Superior Court, and the local medical providers like Sutter Delta Medical Center. This local insight allows us to build stronger, more context-aware cases for our clients.
+
+--------------------------------------------------
+
+[HEADER] Understanding Your Case
+--------------------------------------------------
+[H2] The 4 Elements of Negligence
+[P] To win a personal injury case in California, we must prove four things:
+[LIST]
+- **Duty:** The defendant owed you a duty of care.
+- **Breach:** The defendant failed to meet that duty.
+- **Causation:** That failure directly caused your injury.
+- **Damages:** You suffered actual harm (medical bills, lost wages, pain and suffering).
+
+--------------------------------------------------
+
+[HEADER] Take the First Step
+--------------------------------------------------
+[H2] Free Consultation & No Upfront Fees
+[P] We work on a contingency fee basis, meaning you don't pay unless we win. Don't let the statute of limitations run out on your claim.
+
+[BUTTON] Request a Free Case Evaluation

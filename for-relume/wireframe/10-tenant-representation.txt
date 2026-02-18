@@ -1,0 +1,51 @@
+PAGE: TENANT REPRESENTATION
+========================================
+
+[HEADER] Aggressive Advocacy for Renters
+--------------------------------------------------
+[H1] Pittsburg Tenant Litigation & Defense Lawyer
+[P] At the Law Office of Conrad J. Kuyawa, we don't just advise tenants—we fight for them. If you are living in substandard conditions or facing an unjust eviction, you need more than just information; you need a legal team ready to file lawsuits and hold negligent landlords accountable. Every tenant in California has the right to a safe, sanitary home, and we are committed to enforcing that right through aggressive litigation.
+
+[BUTTON] Back to Tenant Services
+
+--------------------------------------------------
+
+[HEADER] Fighting for Habitability
+--------------------------------------------------
+[H2] When Your Home is a Health Hazard
+[P] We represent tenants dealing with severe habitability violations that threaten their health and safety. We build cases around:
+[LIST]
+- **Toxic Mold & Water Intrusion:** Holding landlords liable for respiratory issues caused by neglect.
+- **Pest Infestations:** Rodents and insects are clear violations of the health code.
+- **Structural Dangers:** Faulty wiring, broken plumbing, and collapsing ceilings.
+
+[P] We work with building inspectors and medical experts to document the extent of the negligence and the impact on your life.
+
+[BUTTON] Learn About the Implied Warranty of Law
+
+--------------------------------------------------
+
+[HEADER] Strategic Eviction Defense
+--------------------------------------------------
+[H2] Protecting You From Retaliation
+[P] It is illegal for a landlord to evict you for requesting repairs or reporting code violations. If you have received an eviction notice after complaining about your living conditions, we can help you assert your "Protection from Retaliation" rights. We scrutinize every eviction notice for legal defects and represent you in court to stop unlawful removals.
+
+--------------------------------------------------
+
+[HEADER] How We Win
+--------------------------------------------------
+[H2] Our Litigation Approach
+[P] We pursue maximum compensation for our clients, including:
+[LIST]
+- **Rent Refunds:** Recovering rent paid for uninhabitable months.
+- **Emotional Distress:** Compensation for the stress and anxiety of unsafe housing.
+- **Relocation Costs:** Forcing landlords to pay for your move if the unit is unlivable.
+
+--------------------------------------------------
+
+[HEADER] Don't Face Your Landlord Alone
+--------------------------------------------------
+[H2] Contact a Skilled Tenant Attorney
+[P] If your landlord refuses to make repairs or is threatening eviction, document everything and contact us immediately. We are ready to step in and protect your home.
+
+[BUTTON] Request a Case Evaluation

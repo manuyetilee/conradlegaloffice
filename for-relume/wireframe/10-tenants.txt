@@ -1,0 +1,40 @@
+PAGE: TENANTS (HUB)
+========================================
+
+[HEADER] Tenant Rights & Housing Advocacy
+--------------------------------------------------
+[H1] Pittsburg Housing Lawyer: Protecting Your Home and Rights
+[P] The legal relationship between tenants and landlords is complex and governed by strict California statutes. At the Law Office of Conrad J. Kuyawa, we specialize in providing vigorous advocacy for individuals facing housing instability, substandard conditions, or unlawful actions by property owners. Whether you are dealing with a habitability crisis or a contentious eviction proceeding, you deserve a lawyer who understands the high stakes of losing your home.
+
+--------------------------------------------------
+
+[HEADER] Our Core Practice Areas
+--------------------------------------------------
+[H2] Ensuring Safe and Habitable Housing
+[P] Every tenant in California is entitled to a safe, sanitary, and livable environment. If your landlord has failed to maintain basic standards—such as functional plumbing, effective weatherproofing, or pest control—you have powerful legal protections.
+
+[BUTTON] Learn About the Implied Warranty of Habitability
+
+[H2] Strategic Eviction Defense & Representation
+[P] Evictions are often emotional and legally complex. We ensure that the proper legal process is followed and fight to protect your right to stay in your home. From lease disputes to negotiation with landlords, we provide the formal and diligent representation required to secure a favorable outcome.
+
+[BUTTON] Explore Our Tenant Representation Services
+
+--------------------------------------------------
+
+[HEADER] Why Pittsburgh Residents Trust Our Firm
+--------------------------------------------------
+[H2] Direct Advocacy, Proven Success
+[P] Housing law is not just a practice area for us; it is our primary niche. We take personal service seriously, providing every client with a direct line to their attorney. Our firm combines deep research with aggressive advocacy to ensure that your rights are not just recognized, but enforced.
+
+[H3] Strategic Roadmap for Your Tenancy
+[P] We don’t just handle paperwork; we provide a strategic roadmap to resolve disputes efficiently and formally. Our goal is your peace of mind and the preservation of your housing security.
+
+--------------------------------------------------
+
+[HEADER] Take Action Today
+--------------------------------------------------
+[H2] Ready to Defend Your Rights?
+[P] Delaying legal action can jeopardize your case. Contact our office today to discuss your situation with an experienced housing attorney who understands the Pittsburg and Contra Costa County legal landscape.
+
+[BUTTON] Request a Consultation

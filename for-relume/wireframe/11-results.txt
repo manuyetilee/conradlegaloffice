@@ -1,0 +1,62 @@
+PAGE: RESULTS
+========================================
+
+[HEADER] Proven Track Record
+--------------------------------------------------
+[H1] Results That Speak for Themselves
+[P] At the Law Office of Conrad J. Kuyawa, our primary measure of success is the outcome we achieve for our clients. We bring diligent preparation and aggressive advocacy to every case, whether we are negotiating a settlement or litigating in court. While past results do not guarantee future outcomes, our history demonstrates a consistent commitment to excellence and client satisfaction.
+
+--------------------------------------------------
+
+[HEADER] By The Numbers
+--------------------------------------------------
+[H2] A History of Success
+[P] Our firm has successfully resolved numerous high-stakes cases for clients across Contra Costa County.
+
+[STAT] Millions Recovered
+[SUB] In Settlements & Verdicts for Our Clients
+
+[STAT] 100+ Defense Dismissals
+[SUB] Successfully Protecting Clients from Unjust Claims
+
+--------------------------------------------------
+
+[HEADER] Case Studies
+--------------------------------------------------
+[H2] Representative Matters
+[P] Explore a selection of our recent victories. Click on a case to read the full details of how we protected our client's rights.
+
+[ACCORDION: Case List]
+
+    [ITEM: Tenant Defense - Eviction Dismissed]
+    [DATE] October 2023
+    [HEADER] Unlawful Detainer Action Dismissed on Trial Day
+    [PREVIEW] Our client faced an unjust eviction based on alleged lease violations. After months of rigorous discovery and pre-trial motions, we exposed significant flaws in the landlord's documentation.
+    [CONTENT] On the day of trial, the plaintiff voluntarily dismissed the entire case. Our client remained in their home with their tenancy fully reinstated, and we successfully negotiated for the landlord to cover a portion of the legal fees.
+
+    [ITEM: Personal Injury - Policy Limit Settlement]
+    [DATE] August 2023
+    [HEADER] Maximum Policy Limits Secured for Auto Accident Victim
+    [PREVIEW] A client suffered severe back injuries after being rear-ended on Highway 4. The insurance company initially offered a minimal settlement that barely covered medical bills.
+    [CONTENT] We refused the initial offer and prepared for litigation. By presenting comprehensive medical evidence and expert testimony regarding the long-term impact of the injury, we secured a settlement for the full policy limits of the at-fault driver, ensuring our client's future medical needs were covered.
+
+    [ITEM: Habitability - Rent Abatement]
+    [DATE] June 2023
+    [HEADER] Significant Rent Refund for Substandard Living Conditions
+    [PREVIEW] Tenants in a Pittsburg apartment complex were living with persistent mold and pest infestations that the landlord refused to address.
+    [CONTENT] We filed a lawsuit alleging breach of the implied warranty of habitability. Through aggressive negotiation, we secured a substantial retroactive rent abatement for our clients, forcing the landlord to return thousands of dollars in rent paid during the period of disrepair, in addition to funding the necessary remediation work.
+
+    [ITEM: Wrongful Death - Confidential Settlement]
+    [DATE] March 2023
+    [HEADER] Justice for a Grieving Family
+    [PREVIEW] Representing the family of a victim involved in a fatal commercial trucking accident.
+    [CONTENT] We conducted an independent investigation that revealed safety log violations by the trucking company. This evidence was pivotal in securing a significant confidential settlement that provided financial security for the surviving spouse and children, allowing them to grieve without the burden of financial instability.
+
+--------------------------------------------------
+
+[HEADER] Secure Your Future
+--------------------------------------------------
+[H2] Let Us Fight for Your Results
+[P] Every case is different, but our dedication to winning remains the same. Contact us to discuss your legal needs.
+
+[BUTTON] Schedule a Case Evaluation

@@ -1,0 +1,50 @@
+PAGE: TESTIMONIALS
+========================================
+
+[HEADER] Client Success Stories
+--------------------------------------------------
+[H1] Real Reviews from Real Clients
+[P] At the Law Office of Conrad J. Kuyawa, our reputation is built on the trust we earn from our clients. We understand that hiring an attorney is often done during the most stressful times of your life. That is why we are proud to share the experiences of those we have helped. From securing fair settlements to defending rights in court, our clients' stories reflect our commitment to compassionate, results-driven representation.
+
+[BUTTON] Read Our 5-Star Reviews on Yelp
+
+--------------------------------------------------
+
+[HEADER] Why Our Approach Works
+--------------------------------------------------
+[H2] Aggressive Advocacy & Compassionate Care
+[P] We believe that a great lawyer must be two things: a fierce fighter for their client and a compassionate advisor.
+[LIST]
+- **Taking the Offensive:** We don't just defend; we attack. Especially in cases involving insurance companies or negligent landlords, we take an offensive position to ensure you aren't just "protected," but that you actively claim what is rightfully yours.
+- **Compassion First:** We know you are a person, not a case file. We listen to your story, understand your pain, and fight for your future as if it were our own.
+
+--------------------------------------------------
+
+[HEADER] What Clients Are Saying
+--------------------------------------------------
+[GRID: Featured Reviews]
+
+    [REVIEW 1]
+    "I contacted Conrad for an Eviction case and I got what I believe is the best possible service. Conrad's expertise and confidence in the process put me at ease. He is very knowledgeable and willing to do whatever it takes to WIN."
+    - **S.G.** (Verified Yelp Review)
+
+    [REVIEW 2]
+    "If you're looking for a lawyer that goes above and beyond, I highly recommend him! He took the time to explain everything clearly and made me feel like my case truly mattered."
+    - **P.K.** (Verified Yelp Review)
+
+    [REVIEW 3]
+    "Conrad fought the insurance company when they tried to lowball me. He didn't let up until I got the full settlement I deserved. Professional, aggressive, and incredibly supportive throughout the whole ordeal."
+    - **A.M.** (Verified Client)
+
+    [REVIEW 4]
+    "I was terrified of losing my home due to a slumlord situation. Conrad stepped in, stopped the harassment, and actually got me money back for the terrible conditions I lived in. He is a true advocate for tenants."
+    - **J.R.** (Verified Client)
+
+--------------------------------------------------
+
+[HEADER] Join Our List of Satisfied Clients
+--------------------------------------------------
+[H2] Don't Settle for Less
+[P] Experience the difference of having a dedicated, compassionate, and aggressive attorney on your side.
+
+[BUTTON] Contact Us for a Consultation

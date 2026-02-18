@@ -1,0 +1,42 @@
+PAGE: ABOUT US
+========================================
+
+[HEADER] About The Law Office of Conrad J. Kuyawa
+--------------------------------------------------
+[H1] A Firm You Can Trust
+[P] At the Law Office of Conrad J. Kuyawa, we are dedicated to providing aggressive, high-quality legal representation for clients in Pittsburg and throughout Contra Costa County. Whether you are facing a complex landlord-tenant dispute, recovering from a personal injury, or dealing with criminal charges, you need an advocate who will fight for your rights.
+
+[H2] Helping You Achieve Maximum Compensation
+[P] We believe that preparation is the key to success. Our approach is built on a foundation of diligent research, strategic negotiation, and, when necessary, vigorous courtroom advocacy. We guide our clients through every step of the legal process—from the moment an accident occurs to the final settlement or verdict. We know that insurance companies do not have your best interests in mind; our job is to ensure you are not taken advantage of.
+
+--------------------------------------------------
+
+[HEADER] Meet Your Attorney
+--------------------------------------------------
+[H2] Conrad J. Kuyawa
+[SUB] Owner and Managing Attorney
+
+[P] Conrad Joseph Kuyawa established this firm with a clear mission: to provide high-caliber legal services with a personal touch. A graduate of the University of San Francisco School of Law (Top 15% of his class), Conrad passed the California Bar Exam on his first attempt and has been practicing since 2014.
+
+[H3] Direct Access & Personal Service
+[P] unlike many large firms where clients are handed off to paralegals, Conrad believes in direct communication. When you become a client, you receive his direct personal line. If you have a question about your case, you speak to your attorney—not a call center.
+
+[H3] A Competitive Spirit
+[P] "I am very competitive, and I love to win." This drive translates into a low-cost, efficient firm structure that allows us to take on cases other firms might reject. We are honest and transparent from day one, advising the best course of action to secure the justice you deserve.
+
+[BUTTON] View Our Results
+
+--------------------------------------------------
+
+[HEADER] Our Philosophy
+--------------------------------------------------
+[H2] Why Choose Us?
+[LIST]
+- **Honesty & Transparency:** We believe in being honest right from the jump. You will always know where your case stands.
+- **Accessibility:** Direct access to your attorney means your questions are answered promptly.
+- **Results-Oriented:** We are driven by a competitive desire to win for our clients.
+
+[H3] Ready to Discuss Your Case?
+[P] Don't navigate the legal system alone. Contact us today to schedule a consultation with an attorney who truly cares about your outcome.
+
+[BUTTON] Request a Consultation
