@@ -14,36 +14,41 @@ PAGE: VEHICLE ACCIDENTS (CONSOLIDATED)
     [TAB: Car Accidents]
     [H2] Protecting Drivers & Passengers
     [P] Car accidents are the most common cause of personal injury in California. Insurance companies often try to minimize payouts by arguing "comparative negligence" or offering quick, low-ball settlements.
+    [P] **Common Causes:**
+    - Distracted driving (texting/phone use)
+    - Speeding and reckless driving on Highway 4
+    - Driving under the influence (DUI)
+    
     [P] **What We Fight For:**
-    [LIST]
-    - Medical expenses (past and future)
-    - Lost wages and loss of earning capacity
-    - Vehicle repair or replacement value
-    - Pain and suffering
+    We refuse initial low-ball offers. We fight for full compensation covering medical expenses (past and future), lost wages, vehicle repair, and pain and suffering.
 
     [TAB: Bus Accidents]
     [H2] Common Carrier Liability
-    [P] Bus operators (both public and private) are considered "common carriers" under California law, meaning they owe a higher duty of care to their passengers than typical drivers. If you were injured on a bus, or hit by one, the liability rules are strict.
-    [P] **Key Issues:**
-    - Driver fatigue or lack of training
-    - Poor vehicle maintenance
-    - Sudden stops or aggressive driving
+    [P] Bus operators are not just drivers; they are "common carriers" required by law to practice defensive driving to protect passengers. When a bus driver drives too aggressively or makes a mistake, the results can be catastrophic for passengers and pedestrians.
+    [P] **Specific Injuries:**
+    - Slipped discs and spinal cord damage from sudden stops
+    - Whiplash and neck injuries
+    - Broken bones and internal damage
+    
+    [P] **Government Liability:** Claims against public transit agencies (like Tri Delta Transit) have strict, short deadlines (often 6 months). Immediate action is required.
 
     [TAB: Motorcycle Accidents]
     [H2] Fighting for Riders
-    [P] Motorcyclists often face unfair bias from insurance adjusters who try to label them as reckless. We know that riders are often the most safety-conscious people on the road. Because injuries are often catastrophic, we fight aggressively for the lifetime care compensation you may need.
-    [P] **Our Focus:**
-    - Traumatic brain injuries (TBI)
-    - Road rash and scarring
-    - Spinal cord injuries
+    [P] Motorcyclists face unique risks and unfair bias. Insurance adjusters often try to paint riders as reckless, but we know the truth: riders are often the most safety-conscious people on the road. A crash that is a "fender bender" for a car can be life-altering for a rider.
+    [P] **Our Strategy:**
+    - We counter the "reckless rider" bias with hard evidence.
+    - We focus on the long-term cost of catastrophic injuries like Traumatic Brain Injury (TBI) and road rash.
+    - **No Win, No Fee:** We take these cases on a contingency basis. You don't pay unless we recover a settlement for you.
 
     [TAB: Truck Accidents]
     [H2] Commercial Trucking Litigation
-    [P] Accidents involving 18-wheelers or delivery trucks are legally complex because multiple parties may be liable: the driver, the trucking company, the cargo loader, or the vehicle manufacturer. These cases require swift investigation to preserve electronic logbooks and maintenance records before they are destroyed.
-    [P] **We Investigate:**
-    - Hours-of-service violations (driver fatigue)
-    - Overloaded or improperly secured cargo
-    - Negligent hiring practices
+    [P] Accidents involving 18-wheelers or delivery trucks are volatile and destructive. Trucking companies carry massive insurance policies and have legal teams dedicated to minimizing your payout. They will contact you immediately to settle cheaply. **Never accept an offer without contacting us first.**
+    [P] **Complex Liability:**
+    - **Driver:** Fatigue, logbook violations, drug use.
+    - **Company:** Negligent hiring, poor maintenance.
+    - **Loader:** Improperly secured or overloaded cargo.
+    
+    [P] **The 90% Rule:** In 90% of cases, we can negotiate a counteroffer significantly higher than the insurance company's first attempt.
 
 --------------------------------------------------
 
@@ -57,6 +62,6 @@ PAGE: VEHICLE ACCIDENTS (CONSOLIDATED)
 [HEADER] Immediate Action Required
 --------------------------------------------------
 [H2] Don't Delay Your Claim
-[P] The statute of limitations for vehicle accidents in California is generally two years. However, claims against government entities (like public bus systems) have much shorter deadlines (often just 6 months).
+[P] The statute of limitations for vehicle accidents in California is generally two years. However, preserving evidence—like skid marks, camera footage, and witness memories—must happen immediately.
 
 [BUTTON] Schedule a Free Accident Consultation
