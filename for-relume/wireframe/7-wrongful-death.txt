@@ -11,7 +11,7 @@ PAGE: WRONGFUL DEATH
 [HEADER] Understanding Wrongful Death Claims
 --------------------------------------------------
 [H2] What is a Wrongful Death Claim?
-[P] A wrongful death claim is a civil lawsuit filed against a person or entity whose negligence or intentional act caused a fatality. This can stem from car accidents, defective products, medical malpractice, or unsafe premises.
+[P] A wrongful death claim is a civil lawsuit filed against a person or entity whose negligence or intentional act caused a fatality. This can stem from car accidents, defective products, commercial trucking crashes, or unsafe premises.
 
 [H2] Who Can File in California?
 [P] California law allows specific family members to seek compensation, typically including:

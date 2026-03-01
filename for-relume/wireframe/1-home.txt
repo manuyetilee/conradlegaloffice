@@ -1,72 +1,88 @@
-PAGE: 1 HOME
+PAGE: HOME
 ========================================
 
-When it comes to securing the right settlement, you need to work with a team that understands how to navigate the legal system and negotiate to secure the best outcome for you.
-- Get Started
+[HEADER] Main Navigation
+--------------------------------------------------
+[NAV] Home | About Us | Tenants | Personal Injury | Results | Testimonials
+[BUTTON] Get in Touch: (877) 364-6210
 
-[H1] Pittsburg Attorney
+--------------------------------------------------
 
-[H2] A Firm You Can Trust
-Our team at the Law Office of Conrad J. Kuyawa is there for clients when they face trouble. Legal difficulties can arise for any number of reasons. Housing issues can come up when landlords get into a conflicts. We work with parties on either side of these disputes.
-People who have been injured in an accident have a grievance when that accident was caused by someone else’s negligence. We’ve successfully recovered millions of dollars for clients in personal injury settlements. We’re also proud to stand with clients who are facing criminal charges.
-Everyone deserves the right to due process, to a lawyer, and to have that lawyer give real, vigorous advocacy in negotiations with the District Attorney, and ultimately in a court of law. Put us on your side today.
+[HEADER] Hero Section
+--------------------------------------------------
+[H1] We Fight Back, So You Don’t Have To
+[SUB] Experienced Representation Focused on Results
+[P] When it comes to securing the right settlement, you need to work with a team that understands how to navigate the legal system and negotiate to secure the best outcome for you.
+[BUTTON] Get Started
 
-[H2] Contra Costa County Housing Lawyer
-Landlords have both rights and responsibilities under federal law, California statute, and local municipal ordinances. When either side violates those rights, legal counsel can work to make things right in negotiation, and advocate for their client in Housing or Small Claims court if necessary. Areas of dispute can range from the payment of rent to the maintenance of property, to the handling of a security deposit, to discrimination claims, and more. Evictions are often emotional and stressful issues for all involved. At the same time, evictions must also follow a clearly defined legal process. We work with clients to make sure that process is being followed. Whether you’re a landlord or a tenant, if your rights are not being honored, we’ll fight to protect them.
+--------------------------------------------------
 
-[H3] Implied Warranty of Habitability in California
-The warranty of habitability in California is a legal doctrine that requires landlords to maintain rental properties in a habitable condition. This means ensuring that the property is safe, sanitary, and fit for human habitation. Landlords must provide basic amenities such as heating, plumbing, and electricity, and address any issues that affect the tenant's health or safety. Failure to meet these standards can result in legal action by the tenant, including rent withholding or termination of the lease. Our Pittsburg landlord attorney can help those on either side of the legal battle navigate California landlord tenant laws.
-Call the Law Office of Conrad J. Kuyawa at (925) 886-4417 or contact us online to set up a consultation.
+[HEADER] Firm Introduction
+--------------------------------------------------
+[H2] Pittsburg Attorney: A Firm You Can Trust
+[P] The Law Office of Conrad J. Kuyawa is dedicated to providing aggressive and high-quality legal representation for clients in their most difficult times. Whether you are facing a complex housing dispute, recovering from a serious injury, or dealing with criminal charges, we stand with you to ensure your rights are protected and your voice is heard.
 
-[H3] Pittsburg Criminal Defense Lawyer
-If you're facing criminal charges, you need a skilled and experienced attorney on your side to protect your rights and defend your freedom. Our Pittsburg, CA criminal defense lawyers have the knowledge and expertise to handle a variety of criminal cases, including:
-- DUI/DWI
-- Drug offenses
-- Assault and battery
-- Theft crimes
-- Domestic violence
-- Traffic violations
-We work tirelessly to build strong defense strategies tailored to the unique circumstances of each case, striving to achieve the best possible outcome for our clients.
-- “If you're looking for a lawyer that goes above and beyond, I highly recommend him!” - P.K.
-“If you're looking for a lawyer that goes above and beyond, I highly recommend him!”
+--------------------------------------------------
 
-[H3] Standing With Injured Victims & Defendants in the Greater Pittsburg, California Area
+[HEADER] Housing Law Expertise
+--------------------------------------------------
+[H2] Protecting Your Rights in Contra Costa County
+[P] Tenants and landlords both have legal rights, but the landscape is complex. We specialize in California’s habitability laws and the "Implied Warranty of Habitability," ensuring that rental properties are safe, sanitary, and fit for living. If your rights are being violated, we provide the strategic roadmap needed to achieve justice.
 
-[H2] Pittsburg Personal Injury Lawyer
-When people have been injured through someone else’s negligence, the quality of their attorney may go a long way towards deciding whether or not the settlement they get is fair—or if they get a settlement at all. We’ve built up a track record of success in personal injury cases by combining thorough research of every case with vigorous and aggressive advocacy in negotiation and—when necessary—litigation.
-A person charged with a crime can feel like the world is closing in on them and that they have no choice but to accept whatever the D.A.’s office is offering. Every case is different, before pleading out, why not work with an experienced attorney who has a full understanding of the legal options available? At the Law Office of Conrad J. Kuyawa, we know that not every defendant is guilty, that everyone deserves a second chance, and that a prosecutor’s case may not be as airtight as they would like the defendant to believe.
+[BUTTON] Learn About Tenant Rights
 
-[H3] California Personal Injury Representation
-If you've been injured due to someone else's negligence, you deserve justice and fair compensation for your damages. Our personal injury attorneys have a proven track record of success in handling a wide range of cases, including:
-- Car accidents
-- Slip and fall accidents
-- Dog bites
-- Medical malpractice
-- Workplace injuries
-- Wrongful death
-We understand the physical, emotional, and financial toll that injuries can take, and we're here to fight for your rights every step of the way.
-- Car Accidents Personal Injury
-- Car Accidents
-- Personal Injury
-- Criminal Defense Landlord
-- Criminal Defense
-- Landlord
+--------------------------------------------------
 
+[HEADER] Social Proof & Video
+--------------------------------------------------
+[VIDEO] Meet Attorney Conrad J. Kuyawa (Video Player)
+[H2] See What Our Clients Say
+[TESTIMONIAL] "If you're looking for a lawyer that goes above and beyond, I highly recommend him! He took the time to explain everything clearly and made me feel like my case truly mattered." - P.K. (Verified Yelp Review)
+[BUTTON] View All Reviews on Yelp
+
+--------------------------------------------------
+
+[HEADER] Practice Area Overview
+--------------------------------------------------
+[GRID: 4 CARDS]
+    [CARD 1] Vehicle Accidents (Car, Bus, Motorcycle, Truck)
+    [CARD 2] Personal Injury (Negligence & Liability)
+    [CARD 3] Housing Law (Tenants & Habitability)
+    [CARD 4] Criminal Defense (Rights & Advocacy)
+
+--------------------------------------------------
+
+[HEADER] The Personal Service Advantage
+--------------------------------------------------
 [H2] Real Personal Service from Your Pittsburg Attorney
+[P] Unlike large firms where you are just a case number, our clients work directly with their attorney. When you work with us, you get a direct line to Conrad J. Kuyawa via his personal cellphone. Our staff is dedicated to diligent research and preparation, ensuring no detail is overlooked.
 
-[H3] Hire A Law Firm You Can Count On
-When clients work with the Law Office of Conrad J. Kuyawa, they work and consult with an actual lawyer. What’s more, they get a direct line to your attorney, via the use of a personal cellphone. You get the further benefit of legal staff that is dedicated and diligent in their research and preparation for every case. Let us help you or the person you love.
-Call the office at (925) 886-4417 or reach out online to arrange for a consultation.
+[BUTTON] Learn More About Us
 
-[H4] Meet Attorney Conrad J. Kuyawa
+--------------------------------------------------
 
-[H2] High-Quality Counsel You Can Trust
-- Conrad Kuyawa Owner and Managing Attorney
+[HEADER] What You Can Expect With Us
+--------------------------------------------------
+[H2] Our Core Values
+[GRID: 4 PILLARS]
+    - **Step-by-Step Support:** Guidance from intake to final resolution.
+    - **Personalized Attention:** You speak directly to your lawyer.
+    - **Millions Recovered:** A proven track record of successful results.
+    - **Direct Attorney Access:** No barriers between you and your advocate.
 
-[H4] What You Can Expect With Us
-- Step-by-Step Support
-- Personalized Service and Attention
-- Millions Recovered for Our Clients
-- Work Directly With Your Attorney
+--------------------------------------------------
 
-[H4] Request a Consultation
+[HEADER] Final Consultation CTA
+--------------------------------------------------
+[H2] Ready to Get Started?
+[H3] Request a Consultation
+[P] Fill out the form below to begin your journey toward justice.
+
+[FORM: Consultation Request]
+- First Name
+- Last Name
+- Phone
+- Email
+- How can we help you?
+
+[BUTTON] Submit Form
